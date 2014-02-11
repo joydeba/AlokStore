@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Alok Store";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                Where you can Manage your customer list with add,edit,dellet and show details.                 
+            </p>
+        </div>
+    </section>
+}
+<h3>See Your Customer or Company:</h3>
+<ol class="round">
+    <li class="one">
+        All Customer Name 
+        <br />
+        @Html.ActionLink("List", "Index", "Customers")
+    </li>
+
+    <li class="two">
+        Create New Customer
+        <br />
+        @Html.ActionLink("Add Customer", "Create", "Customers")
+    </li>
+
+    <li class="three">
+        Check Your Balance
+        <br />
+        @Html.ActionLink("Balance", "Index", "Customers")
+    </li>
+</ol>

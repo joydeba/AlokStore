@@ -9,6 +9,8 @@ using System.Web.Security;
 using WebMatrix.WebData;
 using AlokStore.Filters;
 using AlokStore.Models;
+using Microsoft.Web.WebPages.OAuth;
+using DotNetOpenAuth.AspNet;
 
 namespace AlokStore.Controllers
 {
